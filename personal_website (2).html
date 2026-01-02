@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naman Masodkar | Personal Website</title>
+  <meta name="description" content="Personal website of Naman Masodkar" />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: linear-gradient(180deg, #020617, var(--bg));
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    .container { max-width: 1000px; margin: auto; padding: 2rem 1.25rem; }
+    header {
+      display: grid;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .hero {
+      background: radial-gradient(1200px 400px at 10% -20%, rgba(56,189,248,.15), transparent),
+                  radial-gradient(800px 300px at 90% -10%, rgba(167,139,250,.12), transparent);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 1.25rem;
+      padding: 2.5rem;
+    }
+    h1 { font-size: clamp(2rem, 4vw, 3rem); }
+    h2 { font-size: 1.5rem; margin-bottom: .75rem; }
+    p { color: var(--muted); }
+    .badges { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+    .badge {
+      padding: .35rem .7rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      font-size: .85rem;
+      color: #e5e7eb;
+    }
+    section { margin-bottom: 3rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.25rem;
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 1.25rem;
+      padding: 1.5rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    footer {
+      border-top: 1px solid rgba(255,255,255,.06);
+      padding-top: 1.5rem;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 1.25rem;
+      padding: .7rem 1.2rem;
+      border-radius: .75rem;
+      background: linear-gradient(135deg, #38bdf8, #818cf8);
+      color: #020617;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="hero">
+        <h1>Hi, I'm Naman 👋</h1>
+        <p style="margin-top: .75rem; max-width: 700px;">
+          I’m a student and tech enthusiast interested in AI, engineering, and building meaningful projects.
+        </p>
+        <div class="badges">
+          <span class="badge">AI & ML</span>
+          <span class="badge">Engineering</span>
+          <span class="badge">Web Development</span>
+        </div>
+        <a class="cta" href="#contact">Get in touch</a>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I enjoy learning how technology works under the hood and applying it to real-world problems.
+        This website is my digital space to share what I’m working on and what I’m learning.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Project One</h3>
+          <p>Short description of what this project does and what you learned.</p>
+        </div>
+        <div class="card">
+          <h3>Project Two</h3>
+          <p>Another project description. You can link GitHub repos here.</p>
+        </div>
+        <div class="card">
+          <h3>Project Three</h3>
+          <p>Highlight a course project, research idea, or prototype.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="badges">
+        <span class="badge">Python</span>
+        <span class="badge">C / C++</span>
+        <span class="badge">HTML & CSS</span>
+        <span class="badge">AI Fundamentals</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>You can reach me via email or connect with me online.</p>
+      <p style="margin-top: .5rem;">
+        📧 <a href="mdrnmn307@gmail.com">mdrnmn307@gmail.com</a>
+      </p>
+    </section>
+
+    <footer>
+      © 2026 Naman Masodkar. Built with simple HTML & CSS.
+    </footer>
+  </div>
+</body>
+</html>
